@@ -1,0 +1,29 @@
+node_modules/
+coverage/
+build/
+dist/
+doc/
+
+flow-typed
+.vscode
+.idea
+.DS_Store
+npm-debug.log
+
+apidoc/
+jsdoc/
+tmp/
+
+syntax: glob
+
+*.heapsnapshot
+*.log
+/public
+/log/
+
+#syntax: regexp
+config/config.json
+
+
+/doc/
+.env

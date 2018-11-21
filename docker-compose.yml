@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  crawler:
+    build: .
+    ports:
+      - "80:80"
+#      - "443:443"
+    volumes:
+      - "./crawler/logs:/home/crawler/log"
+      - "./crawler/results:/home/crawler/results"
+    restart: always

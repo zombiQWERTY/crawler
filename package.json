@@ -1,0 +1,61 @@
+{
+  "name": "crawler",
+  "version": "0.1.0",
+  "description": "Web crawler",
+  "main": "./src/index.js",
+  "homepage": "",
+  "engines": {
+    "node": ">=9.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zombiQWERTY/crawler"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/zombiQWERTY/crawler/issues",
+    "email": "zombiqwerty@yandex.ru"
+  },
+  "author": {
+    "name": "Company Name",
+    "email": ""
+  },
+  "contributors": [
+    {
+      "name": "Pavel Zinovev",
+      "email": "zombiqwerty@yandex.ru",
+      "url": ""
+    }
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "cross-env": "^3.1.4",
+    "event-to-promise": "^0.8.0",
+    "log4js": "^2.11.0",
+    "mkdirp": "^0.5.1",
+    "ramda": "^0.24.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "env-test": "^1.0.0",
+    "http-server": "^0.10.0",
+    "jest": "^21.2.1",
+    "jsdoc": "^3.5.3",
+    "nodemon": "^1.18.4",
+    "yargs": "^6.4.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "compile": "sh ./bin/compile.sh",
+    "jsdoc": "jsdoc -c ./jsdoc.json && http-server ./jsdoc",
+    "copy": "sh ./bin/copy.sh",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/index.js 0.0.0.0 3000 --exec babel-node",
+    "start": "cross-env NODE_ENV=production node ./dist/src/index.js"
+  }
+}
