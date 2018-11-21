@@ -6,8 +6,8 @@ ADD ./package.json /home/crawler
 
 RUN \
   curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
-  echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
-  apt-get update \
+  && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
+  && apt-get update \
   && apt-get upgrade -y \
   && apt-get install -y \
   gcc \
@@ -18,7 +18,7 @@ RUN \
   && apt-get clean \
   && npm install -g node-gyp && \
   yarn \
-  echo '{}' > /home/crawler/config/production.json
+  && echo '{}' > /home/crawler/config/production.json
 
 # echo ... is a stub
 

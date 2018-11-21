@@ -44,6 +44,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
     "env-test": "^1.0.0",
     "http-server": "^0.10.0",
     "jest": "^21.2.1",
