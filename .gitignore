@@ -4,6 +4,7 @@ build/
 dist/
 doc/
 
+crawler
 flow-typed
 .vscode
 .idea

@@ -9,4 +9,3 @@ services:
     volumes:
       - "./crawler/logs:/home/crawler/log"
       - "./crawler/results:/home/crawler/results"
-    restart: always
