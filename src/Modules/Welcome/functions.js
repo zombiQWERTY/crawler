@@ -1,3 +1,10 @@
+import { logger } from '../../Helpers/Logger/functions';
+
+/**
+ * Welcome test function.
+ */
 export const welcome = () => {
-  console.log({ message: 'Welcome!' });
+  const message = { message: 'Welcome!' };
+  logger.info(message);
+  return message;
 };

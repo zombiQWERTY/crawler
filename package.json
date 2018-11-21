@@ -30,6 +30,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "convict": "^4.4.0",
     "cross-env": "^3.1.4",
     "event-to-promise": "^0.8.0",
     "log4js": "^2.11.0",

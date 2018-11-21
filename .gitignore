@@ -22,7 +22,7 @@ syntax: glob
 /log/
 
 #syntax: regexp
-config/config.json
+config/*.json
 
 
 /doc/
